@@ -1,6 +1,8 @@
 # youtube-ssrc-test
 
-WGで1kHz, -6dBのサイン波をそれぞれ44100Hz, 24bit (a: 1khz_44100_24.wav), 48000Hz, 24bit (b: 1khz_48000_24.wav) で生成する。
+Youtubeに音声を上げるときに，(a)44100Hzで上げたほうがいいのか，(b)48000Hzで上げたほうがいいのかを検討する。
+
+WaveGene (http://efu.jp.net/soft/wg/wg.html) で1kHz, -6dBのサイン波をそれぞれ44100Hz, 24bit (a: 1khz_44100_24.wav), 48000Hz, 24bit (b: 1khz_48000_24.wav) で生成する。
 
 これをmuxしてmkvを作り，Youtubeにアップロードすると，
 - https://www.youtube.com/watch?v=Cs8PW4_CQIs (a: 44100Hz),
@@ -36,7 +38,7 @@ format code  extension  resolution note
 ```
 
 このうち，format code: 251 (1: opus @160k 48000Hz) と，format code: 22 (2: mp4a.40.2@192k 44100Hz)
-をダウンロードし，WaveSpectra でFFT (131072点 Hanning) すると THD, +Nは以下のようになった：
+をダウンロードし，WaveSpectra (http://efu.jp.net/soft/ws/ws.html) でFFT (131072点 Hanning) すると THD, +Nは以下のようになった：
 
 | format \ sampling | a. 44100Hz         | b. 48000Hz         |
 |-------------------|--------------------|--------------------|
