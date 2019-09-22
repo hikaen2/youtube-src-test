@@ -43,7 +43,7 @@ format code  extension  resolution note
 ```
 
 このうち，format code: 22 (1: mp4a.40.2@192k 44100Hz) と，format code: 251 (2: opus @160k 48000Hz)
-をダウンロードし，WaveSpectra (http://efu.jp.net/soft/ws/ws.html) でFFT (131072点 Hanning) すると THD, +Nは以下のようになった：
+をダウンロードし，WaveSpectra (http://efu.jp.net/soft/ws/ws.html) でFFT (131072点 Hanning) すると THD, +N (S/N) は以下のようになった：
 
 | format \ sampling         | a. 44100Hz         | b. 48000Hz         |
 |---------------------------|--------------------|--------------------|
