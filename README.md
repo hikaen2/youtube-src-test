@@ -1,4 +1,4 @@
-# youtube-ssrc-test
+# youtube-src-test
 
 ## はじめに
 Youtubeに音声を上げるときに，(a)44100Hzで上げたほうがいいのか，(b)48000Hzで上げたほうがいいのかを検証する。
